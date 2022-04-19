@@ -1,0 +1,37 @@
+.container {
+    width: 90vw;
+    height: 90vh;/**/
+    background-color: black;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 500px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'area1, area2 area3';
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;     */
+    }
+
+.items {
+    padding: 20px;/**/
+    width: 30px;
+    height: 30px;
+    text-align: center;/**/
+}
+
+#i1 {
+    background-color: aqua;
+}
+
+#i2 {
+     background-color: violet
+}
+
+#i3 {
+    background-color: gold
+}
+
+#i4 {
+    background-color: cadetblue 
+}
