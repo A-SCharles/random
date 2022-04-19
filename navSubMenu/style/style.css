@@ -1,0 +1,20 @@
+#menu ul li {
+position: relative;
+top: 0;
+float: left;
+padding: 20px;
+list-style: none;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    list-style: none;
+}
+
+#menu ul li:hover .sub-menu{
+display: block;
+position: absolute;
+list-style: none;
+}
