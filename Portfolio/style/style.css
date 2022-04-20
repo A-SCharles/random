@@ -1,0 +1,277 @@
+/* 9. media query 
+  10. The height of the welcome section should be equal to the height of the viewport. */
+body {
+    font-family: Arial;
+    font-size: 1.5em;
+    color: white;
+    line-height: 1;
+    background-color: #1c1c1c;
+}
+
+@media only screen and (max-width: 1366px) {
+    #welcome-section h1 {
+        font-family: times-new-roman;
+        font-size: 2em;
+        color: white;
+    }
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    width: 100vw;
+    text-align: center;
+    background-color: #fa8072;
+}
+
+#navbar a {
+    padding: 15px 20px 15px 20px;
+    font-size: 19;
+    font-family: times-new-roman;
+    color: black;
+    transition: .8s;
+    }
+
+#navbar a:hover {
+    background-color: white;
+    transition: .8s;
+    z-index: 999;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#welcome-section h1 {
+    font-family: times-new-roman;
+    font-size: 3em;
+    color: white;
+}
+
+#welcome-section h2 {
+    font-family: calibri;
+    font-size: 1em;
+}
+
+#intro {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    border: 2px solid cyan;
+    border-radius: 5px;
+}
+
+#about-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    line-height: 1.25;
+}
+
+#about h2 {
+    font-family: times-new-roman;
+    font-size: 3em;
+    text-align: center;
+}
+
+#about p {
+    padding: 20px;
+}
+
+#about {
+    width: 75%;
+    height: fit-content;
+    border: 2px solid cyan;
+    border-radius: 5px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid cyan;
+}
+
+#projects h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.project-tile a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.project-tile a:hover {
+    color: cyan;
+}
+
+.project-tile {
+    text-align: center;
+    width: 45%;
+    height: 500px;
+    margin: 10px auto;
+    padding: 2%;
+    border: 2px solid #fa8072;
+}
+
+.project-tile img {
+    width: 50%;
+    max-height: 400px;
+}
+
+.project-tile img:hover {
+    width: 70%;
+    max-height: 500px;
+    transition: transform .2s;
+}
+
+/**/
+
+/* CONTACT SECTION  */
+
+#contact {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    text-align: center;
+    line-height: normal;
+    scroll-behavior: smooth;
+    scroll-margin-block-start: 75px;
+    scroll-margin-block-end: 100px;
+}
+
+#cont {
+    border: 2px solid #fa8072;
+    width: 90%;
+    height: 70%;
+    line-height: 1;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+}
+
+#contact h1 {
+    font-family: times-new-roman;
+    font-size: 3em;
+}
+
+#contact h2 {
+    font-family: calibri;
+    font-size: 1em;
+}
+
+/* CONTACT FORM  */
+
+form {
+    padding: 20px;
+    border: 2px solid #00adee;
+    width: fit-content;
+    margin: auto;
+}
+
+
+form input,
+form textarea {
+    margin: 15px;
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 200px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#message {
+    vertical-align: middle;
+}
+
+
+/* CONTACT LINKS */
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid cyan;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.fa {
+    color: white;
+    padding: 10px;
+}
+
+.fa-codepen:hover {
+    color: black;
+}
+
+.fa-free-code-camp:hover {
+    color: green;
+}
+
+.fa-github-square:hover {
+    color: purple;
+}
+
+.fa-reddit-square:hover {
+    color: #ff4500;
+}
+
+.fa-steam-square:hover {
+    color: #00adee;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+#profile-link {
+    color: white;
+}
+
+#profile-link:hover {
+    color: cyan;
+}
+
+a:hover {
+    color: cyan;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #fa8072;
+}
