@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#container {
+    width: 50vw;
+    height: 100vh;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+/* Make use of attribute selector:
+* = contain */
+/* img[src *="joel"] {
+    border-radius: 25%;
+} */
+#container figure {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    width: 300%;
+    background-color: rgba(168, 161, 15, 0.3);
+    animation: 10s slide infinite;
+}
+#container figure img {
+    width: 15%;
+    float: left;
+}
+/* Animation */
+@keyframes slide {
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 0%;
+    }
+    50%{
+        left: -50%;
+    }
+    75%{
+        left: -75%;
+    }
+    100%{
+        left: -100%;
+    }
+    /* from{
+        left: 0;
+    }
+    to{
+        left: -30%
+    } */
+}

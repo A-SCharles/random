@@ -1,0 +1,54 @@
+#logo {
+    display: block;
+    margin: 15px auto;
+    height: auto;
+    width: 5em;
+    border: 2px solid green;
+    /* border-radius: 20%; */
+    border-bottom-left-radius:50% ;
+    border-top-right-radius:50% ;
+    box-shadow: 5px 5px 10px 5px green;
+}
+
+/* #leaf {
+    margin: auto;
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: 2px dashed green;
+    border-top-left-radius: 85%;
+    border-bottom-right-radius: 85% ;
+} */
+
+#container{
+width: 15vw;
+height: 60vh;
+background-color: orange;
+margin: auto;
+display: flex;
+flex-direction: column;
+position: relative;
+padding: 30px;
+}
+
+#logo, #description {
+position: absolute;
+}
+
+#container #logo {
+    top: 0;
+    left: 0;
+}
+
+#container #description {
+    left: 0;    
+    bottom: 0;
+}
+
+#container #description p {
+    text-align: center  ;
+}
+
+@media screen and (max-width: 900){
+
+}
