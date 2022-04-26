@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header{
+    min-height: 100px;
+    min-width: 100%;
+    
+    background-color: yellow;
+    padding: 10px;
+}
+
+#class2{
+    position: sticky;
+    top: 20px;
+    background-color: yellowgreen;
+}
+
+nav{
+
+}
+
+main{
+    /* margin-top: 100px; */
+    background-color: gray;
+    min-width: 80vw;
+    min-height: 80vh;
+    padding: 10px;
+    position: relative;
+
+}
+
+#fixed{
+ position: fixed;   
+ background-color: tomato;
+}
+
+#box1{
+background-color: blue;
+width: 350px;
+height: 350px;
+/* position: relative; */
+/* top: -500px; */
+}
+
+/* #placeOnTop{
+
+} */
+
+#box2{
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+}
+

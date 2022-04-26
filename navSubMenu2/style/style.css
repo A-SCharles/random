@@ -1,0 +1,27 @@
+#menu {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+#menu a {
+padding:20px;
+font-size: 19px;
+margin: auto;
+text-align: center;
+}
+
+
+
+main {
+    /* float: right; */
+}
+
+span {
+    background-color: aqua;
+}

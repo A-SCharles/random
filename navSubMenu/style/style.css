@@ -1,20 +1,81 @@
-#menu ul li {
-position: relative;
-top: 0;
-float: left;
-padding: 20px;
-list-style: none;
+#menu {
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: antiquewhite;
 }
 
-.sub-menu{
-    display: none;
-    position: absolute;
-    left: 0;
+#menu ul, #menu li {
+    margin: 0 auto;
+    padding: 0;
     list-style: none;
 }
 
-#menu ul li:hover .sub-menu{
-display: block;
-position: absolute;
-list-style: none;
+#menu ul {
+    text-align: center;
+    width: 100%;
+}
+
+#menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#menu a {
+    display: block;
+	/* line-height: 45px; */
+	padding: 20px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 19px;
+    transition: .8s
+}
+
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+
+#menu li a:hover {
+	color: #FFFFFF;
+	background: #6265FF;
+    transition: .8s;
+}
+
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #fa8072;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+    text-align: left;
+}
+
+#menu ul.sub-menus a {
+	color: black;
+	font-size: 16px;
+    transition: .8s;
+}
+#menu li:hover ul.sub-menus {
+	display: block;
+}
+#menu ul.sub-menus a:hover{
+	background: #6265FF;
+	color: white;
+    transition: .8s;
+}
+
+main {
+    /* float: right; */
+}
+
+span{
+    background-color: aqua;
 }

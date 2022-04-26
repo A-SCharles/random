@@ -1,0 +1,11 @@
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100vw;
+}
+
+.pictures {
+    width: 10em;
+    height: 10em;
+    margin: 20px 10px 0;
+}

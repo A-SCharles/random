@@ -15,13 +15,21 @@
         <!-- 6. navbar -->
         <!-- 7. nav links to sections on page -->
         <!-- 11. fixed navbar -->
-        <nav id="navbar">
-            <a href="#welcome-section">Introduction</a>
-            <a href="#about-section">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
+        
+        <nav id='menu'>
+            <ul>
+              <li><a href=#welcome-section>Home</a></li>
+              <li><a class='dropdown-arrow' href=#about-section>About</a>
+                <ul class='sub-menus'>
+                  <li><a href=#skillsTestContainer>Skills</a></li>
+                  <li><a href=#skillsTestContainer>Testimonials</a></li>
+                </ul>
+              </li>
+              <li><a href=#projects>Projects</a></li>
+              <li><a href=#contact>Contact</a></li>
+            </ul>
+          </nav>
+                
         <!-- 1. Welcome section -->
         <!-- 2. welcome section h1 -->
         <section id="welcome-section">
@@ -37,7 +45,7 @@
                 <p>I studied IT at College of Cape-Town for 3 years, I completed the course in 2021,</br>
                     I have a responsive web design certification which can be viewed <a
                         href="https://www.freecodecamp.org/ASCharles">here.</a></br>
-                    Prior to my It NCV level 4 certification, I completed the memorization of the Qur'an after 4 years
+                    Prior to my IT NCV level 4 certification, I completed the memorization of the Qur'an after 4 years
                     at
                     Madrasatun'Nur, </br>
                     I also have a Level 2 mechanical engineering certification. At a young age I've always been
@@ -52,6 +60,61 @@
                     Now I find myself eager to learn more about the vast world of Software Development.</p>
             </div>
         </section>
+
+        <section id="skillsTestContainer">
+                <div class="skillsTest">
+                    <h3>Skills</h3>
+                    <div class="skills">
+                        <img src="image/WDLogo.png" alt=""><br>
+                        <p>Web Design</p>
+                        <progress value="75" max="100" >
+                        </progress>
+                    </div>
+                    <div class="skills">
+                        <img src="image/photoshop-h-png-logo-3.png" alt=""><br>
+                        <p>Adobe Photoshop</p>                      
+                        <progress value="43" max="100" >
+                        </progress>
+                    </div>
+                    <div class="skills">
+                        <img src="image/creative-idea-logo-.png" alt=""><br>
+                        <p>Creativity</p>                      
+                        <progress value="43" max="100" >
+                        </progress>
+                    </div>
+                    <div class="skills">
+                        <img src="image/teamwork-logo.png" alt=""><br>
+                        <p>Teamwork</p>                      
+                        <progress value="80" max="100" >
+                        </progress>
+                    </div>
+                </div>
+                    <!-- TESTIMONIALS  -->
+                <div class="skillsTest">
+                    <h3>Testimonials</h3>
+                    <div class="tests">
+                        <p id="name">Ikhlaas Rawoot <br>
+                        -peer </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa in inventore exercitationem ex ipsam consequuntur neque, quasi, magnam blanditiis veniam minima? Deserunt minus maxime sed, voluptates laudantium accusamus error.</p>
+                    </div>
+                    <div class="tests">
+                        <p id="name">Michaela Ward <br>
+                        -peer</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ratione maxime, a perspiciatis laborum sapiente quidem. Quae voluptates sunt, adipisci excepturi sit dolor quam laborum deleniti et. Consectetur, voluptates ab?</p>
+                    </div>
+                    <div class="tests">
+                        <p id="name">Moegamat Saliem Ariefdien <br>
+                            -peer</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ratione maxime, a perspiciatis laborum sapiente quidem. Quae voluptates sunt, adipisci excepturi sit dolor quam laborum deleniti et. Consectetur, voluptates ab?</p>
+                    </div>
+                    <div class="tests">
+                        <p id="name">Taucia Jackson <br>
+                            -peer</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium ratione maxime, a perspiciatis laborum sapiente quidem. Quae voluptates sunt, adipisci excepturi sit dolor quam laborum deleniti et. Consectetur, voluptates ab?</p>
+                    </div>
+                </div>
+        </section>
+
 
         <!-- 3. Projects-section -->
         <!-- 4. project-tile class -->
@@ -104,7 +167,8 @@
 
                 <!-- <section > -->
                     
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/mnqwgkal"
+                    method="POST" >
                         <h3>Contact me here</h3>
 
                         <label for="name">Name:</label> 
@@ -115,6 +179,8 @@
         
                         <label for="message">Message:</label> 
                         <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+
+                        <button id="btn" type="submit">Send</button>
                     </form>
                 <!-- </section> -->
 

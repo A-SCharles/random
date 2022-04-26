@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    /* border-radius: 50%; */
+    margin: auto;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#orange {
+    background-color: orange;
+}
+
+.curve {
+    border-radius: 50%;
+}

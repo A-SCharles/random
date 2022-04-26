@@ -1,0 +1,19 @@
+#box1 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 50%;
+    background-color: aqua;
+    margin:auto;
+    display: flex;
+        justify-content: center ;
+}
+
+#box2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: black;
+    align-self: center;
+    /* justify-self: center; */
+    }
