@@ -1,0 +1,43 @@
+.Home{ 
+    animation: glow 5s ease-in-out infinite;
+}
+
+@keyframes glow{
+    0%{
+        box-shadow:0 0 80px white,
+        0 0 20px white, 0 0 30px white,
+        0 0 40px white, 0 0 50px white,
+        0 0 60px white, 0 0 70px white;
+    }
+
+    25%{
+        box-shadow: 0 0 10px #fff, 0 0 20px white,
+        0 0 30px #fa8072, 0 0 40px #fa8072,
+         0 0 50px #fa8072, 0 0 60px #fa8072,
+          0 0 70px #fa8072;
+    }
+
+    50%{
+        box-shadow:0 0 80px white,
+        0 0 20px white, 0 0 30px white,
+        0 0 40px white, 0 0 50px white,
+        0 0 60px white, 0 0 70px white;
+    }
+
+    75%{
+        box-shadow: 0 0 20px #fff, 0 0 30px #0077b5,
+       0 0 40px #0077b5, 0 0 50px #0077b5, 0 0 60px #0077b5,
+        0 0 70px #0077b5, 0 0 80px #0077b5;
+    }
+
+    100%{
+        box-shadow:0 0 80px white,
+        0 0 20px white, 0 0 30px white,
+        0 0 40px white, 0 0 50px white,
+        0 0 60px white, 0 0 70px white;
+    }
+}
+/* form */
+#my-form{
+    bottom: 0;
+}
